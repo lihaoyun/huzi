@@ -1,0 +1,12 @@
+node_modules/
+.idea
+npm-debug.log
+.DS_Store
+
+!reset.css
+!swiper.min.css
+
+/build/imgs
+/build/*.html
+*.bundle.js
+*.zip

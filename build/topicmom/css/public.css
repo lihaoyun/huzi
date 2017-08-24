@@ -1,0 +1,69 @@
+header{
+	position: relative;
+	height: .54rem;
+	background: #CB68A4;
+}
+header>h2{
+	line-height: .54rem;
+	text-align: center;
+	font-size: .2rem;
+}
+header>a{
+	position: absolute;
+	top: .17rem;
+	left: .2rem;
+	width: .12rem;
+	height: .21rem;
+	background: url(../imgs/arrow-l.png) no-repeat;
+	background-size: contain;
+}
+header>span{
+	position: absolute;
+}
+header>i{
+	position: absolute;
+	top: .12rem;
+	left: 50%;
+	margin-left: -.385rem;
+	width: .77rem;
+	height: .3rem;
+	background: url(../imgs/logo.png) no-repeat;
+	background-size: contain;
+}
+header>span.search-cancel{
+	right: .2rem;
+	font-size: .14rem;
+	line-height: .54rem;
+}
+header>input.search-input{
+	position: absolute;
+	top: .12rem;
+	left: .5rem;
+	width: 2.6rem;
+	height: .3rem;
+	text-indent: .1rem;
+	background: #EC8EC7;
+	border-radius: 3px;
+}
+header>span.save{
+	top: 0;
+	right: .2rem;
+	font-size: .14rem;
+	line-height: .54rem;
+}
+header>span.share{
+	top: .14rem;
+	right: .2rem;
+	width: .24rem;
+	height: .26rem;
+	background: url(../imgs/share.png) no-repeat;
+	background-size: contain;
+}
+header>em{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: .5rem;
+	height: 100%;
+	z-index: 1;
+}

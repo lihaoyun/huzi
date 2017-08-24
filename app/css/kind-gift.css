@@ -1,0 +1,307 @@
+.kind-tab{
+	padding-top: 68px;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+}
+.kind-tab a{
+	position: static;
+	display: block;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+}
+.kind-tab a.active{
+	color: #CB68A4
+}
+.kind-banner{
+	width:100%;
+	height:300px;
+	background:url(../imgs/kind-banner.png) no-repeat 100%;
+	background-size: cover;
+	position: relative;
+}
+
+.kind-banner-wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+.kind-banner-wrap .kind-banner-tab{
+	margin: 130px auto 0;
+	overflow: hidden;
+}
+.kind-banner-wrap .kind-banner-tab .kind-banner-tab-item{
+	float: left;
+	margin-right: 10px;
+	width: 310px;
+	height: 80px;
+	line-height: 80px;
+	background-color: #fff;
+	border-radius: 3px;
+	transition: all .5s;
+	cursor: pointer;
+}
+.kind-banner-wrap .kind-banner-tab .kind-banner-tab-item span{
+	display: inline-block;
+	margin-left: 86px;
+	margin-right: 17px;
+	width: 92px;
+	height: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #5F5F5F;
+}
+.kind-banner-wrap .kind-banner-tab .kind-banner-tab-item em{
+	display: inline-block;
+	width: 13px;
+	height: 100%;
+	background: url(../imgs/down.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+	transition: all .5s;
+}
+
+.kind-banner-wrap .kind-banner-tab.active{
+	overflow: hidden;
+}
+.kind-banner-wrap .kind-banner-tab.active .kind-banner-tab-item{
+	float: left;
+	margin-right: 10px;
+	width: 310px;
+	height: 54px;
+	line-height: 54px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.kind-banner-wrap .kind-banner-tab.active .kind-banner-tab-item span{
+	display: inline-block;
+	margin-left: 86px;
+	margin-right: 17px;
+	width: 92px;
+	height: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #5F5F5F;
+}
+.kind-banner-wrap .kind-banner-tab.active .kind-banner-tab-item em{
+	display: inline-block;
+	width: 13px;
+	height: 100%;
+	background: url(../imgs/down.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.kind-banner-wrap .kind-banner-tab.active .kind-banner-tab-item em.active{
+	transform: rotate(180deg);
+}
+
+.kind-banner-wrap .kind-banner-con{
+	margin: 10px auto;
+	overflow: hidden;
+	opacity: 1;
+	transition: all .5s;
+}
+.kind-banner-wrap .kind-banner-con .kind-banner-con-item{
+	float: left;
+	margin-right: 14px;
+	width: 154px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.2)
+}
+.kind-banner-wrap .kind-banner-con .kind-banner-con-item span{
+	font-size: 14px;
+	color: #666;
+	transition: all .5s;
+}
+.kind-banner-wrap .kind-banner-con .kind-banner-con-item.active{
+	line-height: 0;
+	background-color: #77CEE5;
+}
+.kind-banner-wrap .kind-banner-con .kind-banner-con-item.active span{
+	display: inline-block;
+	width: 70px;
+	height: 42px;
+	line-height: 42px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+.kind-gift{
+	display: -none;
+}
+.kind-gift .kind-banner-tab{
+	width: 640px;
+}
+.kind-gift .kind-banner-con.who{
+	width: 504px;
+}
+.kind-gift .kind-banner-con.what{
+	width: 1008px;
+}
+.kind-goods .kind-banner-con.styles-con,.kind-goods .kind-banner-con.materials-con,.kind-goods .kind-banner-con.prices-con{
+	width: 672px;
+}
+.kind-goods{
+	display: none;
+}
+.kind-goods .kind-banner-tab{
+	width: 960px;
+}
+.kind-custom{
+	background-color: #fff;
+	display: none;
+}
+.kind-custom div{
+	position: relative;
+	margin: 0 auto;
+	width: 1028px;
+	height: 298px;
+}
+.kind-custom img{
+	width: 1028px;
+	height: 298px;
+}
+.kind-custom a{
+	position: absolute;
+	right: 128px;
+	top: 161px;
+	width: 124px;
+	height: 30px;
+}
+.for-list-public{
+	position:absolute;
+	left:0;
+	bottom:-55px;
+	height:80px;
+	width:665px;
+	background:#fff;
+	border-radius:4px;
+	// box-shadow: 0 4px 8px 0 #F0F0F0;
+}
+.for-who-list-public{
+	width:294px;
+	height:44px;
+	border-right:1px solid #DDDDDD;
+	float:left;
+	margin-top:16px;
+}
+.for-what-list-public{
+	margin-top:16px;
+	border-right:1px solid #DDDDDD;
+}
+.search-finish{
+	display:inline-block;
+	line-height:80px;
+	width:77px;
+	text-align:center;
+	color:#CB68A4;
+	font-size:14px;
+}
+.for-who-list-public li{
+	float:left;
+	width:77px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	background: #FFFFFF;
+	border-radius: 6.4px;
+	margin-left:15px;
+}
+.for-who-list-active{
+	border: 1px solid #E26AB4;
+}
+.for-what-list-active{
+	border: 1px solid #E26AB4;
+}
+.for-what-list-public{
+	width:294px;
+	float:left;
+	margin-top:11px;
+}
+.for-what-list-public li{
+	float:left;
+	width:77px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	background: #FFFFFF;
+	border-radius: 6.4px;
+	margin-left:15px;
+}
+.search-classify{
+	width:290px;
+	height:37px;
+	margin-left:600px;
+}
+.search-classify li{
+	float:left;
+	width:58px;
+	font-size:12px;
+	color:#fff;
+	margin-top:21px;
+	text-align:center;
+}
+.guess-like-public{
+	margin-top:20px;
+}
+.guess-like-public li{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.kind-child{
+	padding-top: 10px;
+	height: 209px;
+	width:324px;
+}
+// 亲子商品列表
+.goods-children-item-public{
+	width:334px;
+	height:209px;
+	background:#fff;
+	float:left;
+	margin-left:5px;
+	margin-top:20px;
+}
+.goods-children-item-public div{
+	width:324px;
+	height:199px;
+	border:1px solid #F0F0F0;
+	margin-top:5px;
+	margin-left:5px;
+}
+.goods-children-item-public div a{
+	float:left;
+	width:50%;
+	height:162px;
+}
+.goods-children-item-public div img{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all .5s;
+}
+.goods-children-item-public div p{
+	clear:both;
+	height:36px;
+	line-height:36px;
+	width:296px;
+	border-top:1px solid #E2E2E2;
+	margin-left:14px;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	color:#666;
+	font-size:14px;
+}

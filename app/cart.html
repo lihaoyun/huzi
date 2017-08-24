@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.3.css">
+</head>
+<body>
+    <header class="top-public">
+       <div class="top-wrap-public">
+            <img src="imgs/log.png" class="log">
+            <ul class="kinds-public">
+                <li><a href="index.html" target="_blank">首页</a></li>
+                <li><a href="kind-gift.html" target="_blank">分类</a></li>
+                <li><a href="find-index.html" target="_blank">发现</a></li>
+            </ul>
+            <span class='func-public'>
+                <a href="search.html" target="_blank"><img src="imgs/search-pic.png"></a>
+                <a href="cart.html" target="_blank"><img src="imgs/cart.png"></a><em>1</em>
+                <a href="personal-orders.html" target="_blank"><img src="imgs/personal.png"></a>
+            </span>
+        </div>
+   </header>
+   <div class="wrap-border-public"></div> 
+   
+    <div class="body-wrap">
+        <!--  购物车列表 -->
+        <div class="wrap-cart">
+           <!-- 全选 -->
+           <div class="cart-pay">
+                <div class="pay-price" style="display: none">
+                    <span data-btn="false" class="active"></span>
+                    <i>全选</i>
+                </div>
+                <div class="service">
+                    <a href="javascript:;" onclick="NTKF.im_openInPageChat('kf_9529_1489472556188')">联系客服</a>
+                </div>
+            </div>
+
+            <div class="cart-list">
+                <ul>
+                     <!-- <li class="cart-item">
+                        <div class="cart-item-detail">
+                            <div class="cart-item-l">
+                                <span class="select-box active"></span>
+                                <div class="goods-pic">
+                                    <img src="./imgs/personal-item-pic.png" alt="">
+                                    <a href="javascript:;"></a>
+                                </div> 
+                            </div>
+                            <div class="cart-item-r">
+                                <h3 class="goods-name"><a href="goods-detail.html">很大的的哈达哈dance从南山南的哈哈的的哈的哈哈的安萨</a>
+                                
+                                <p>购买数量超出当前库存量</p>
+                                </h3>
+
+                                <p class="goods-material">配件：<em>925银44厘米o型项链</em></p>
+                                <div class="goods-price">
+                                    <span>￥8000</span>
+                                    <div class="goods-count">
+                                        <span class="goods-add">-</span>
+                                        <input type="number" value="1" name="">
+                                         <span class="goods-remain">+</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item-remove"><i></i> <em>删除</em> </div>
+                            </div>
+                        </div> -->
+                   <!--  </li>
+                    <li class="cart-item">
+                        <div class="cart-item-detail">
+                            <div class="cart-item-l">
+                                <span class="select-box active"></span>
+                                <div class="goods-pic">
+                                    <img src="./imgs/personal-item-pic.png" alt="">
+                                    <a href="javascript:;"></a>
+                                </div> 
+                            </div>
+                            <div class="cart-item-r">
+                                <h3 class="goods-name"><a href="goods-detail.html">很大的的哈达哈dance从南山南的哈哈的的哈的哈哈的安萨</a></h3>
+
+                                <p class="goods-material">配件：<em>925银44厘米o型项链</em></p>
+                                <div class="goods-price">
+                                    <span>￥8000</span>
+                                    <div class="goods-count">
+                                        <span class="goods-add">-</span>
+                                        <input type="number" value="1" name="">
+                                         <span class="goods-remain">+</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item-remove"><i></i> <em>删除</em> </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cart-item">
+                        <div class="cart-item-detail">
+                            <div class="cart-item-l">
+                                <span class="select-box active"></span>
+                                <div class="goods-pic">
+                                    <img src="./imgs/personal-item-pic.png" alt="">
+                                    <a href="javascript:;"></a>
+                                </div> 
+                            </div>
+                            <div class="cart-item-r">
+                                <h3 class="goods-name"><a href="goods-detail.html">很大的的哈达哈dance从南山南的哈哈的的哈的哈哈的安萨</a></h3>
+
+                                <p class="goods-material">配件：<em>925银44厘米o型项链</em></p>
+                                <div class="goods-price">
+                                    <span>￥8000</span>
+                                    <div class="goods-count">
+                                        <span class="goods-add">-</span>
+                                        <input type="number" value="1" name="">
+                                         <span class="goods-remain">+</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item-remove"><i></i> <em>删除</em> </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cart-item">
+                        <div class="cart-item-detail">
+                            <div class="cart-item-l">
+                                <span class="select-box active"></span>
+                                <div class="goods-pic">
+                                    <img src="./imgs/personal-item-pic.png" alt="">
+                                    <a href="javascript:;"></a>
+                                </div> 
+                            </div>
+                            <div class="cart-item-r">
+                                <h3 class="goods-name"><a href="goods-detail.html">很大的的哈达哈dance从南山南的哈哈的的哈的哈哈的安萨</a></h3>
+
+                                <p class="goods-material">配件：<em>925银44厘米o型项链</em></p>
+                                <div class="goods-price">
+                                    <span>￥8000</span>
+                                    <div class="goods-count">
+                                        <span class="goods-add">-</span>
+                                        <input type="number" value="1" name="">
+                                         <span class="goods-remain">+</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item-remove"><i></i> <em>删除</em> </div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                    
+                </ul>
+                 
+            </div>
+            
+        </div> 
+    
+       <!-- 底边栏 -->
+       <div class="footer">
+           <div class="wrap-border-public"></div>  
+           <div class="footer-content">
+               <div class="left"> 
+                   <img src="imgs/log.png" class="log">
+               </div>
+               <div class="center">
+                   <p>Ooh Dear 北京华亨特经贸有限责任公司 北京朝阳区八里庄东里1号莱锦产业园</p>
+                   <p>2009-2017  oohdear.com ALL Rights Reserved  京ICP备08100402号 京ICP证120164</p>
+               </div>
+               <div class="right">
+                   <p>客服电话：<i>400-815-8898</i><i>010-58792103</i>工作日 9:00-18:00</p>
+                   <p>在线客服：每日9:00-22:00</p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- 全选 -->
+   <div class="selectall">
+        <div class="account">
+            <div class="pay-price">
+                <span data-btn="false" class="active"></span>
+                <i>全选</i>
+                <em>已选<i>2</i>件商品</em>
+            </div>
+            <div class="pay-money">
+                <span></span>
+                <button class="account-btn">结算</button>
+                <a href="javascript:;" target="_blank"></a>
+            </div>
+        </div>
+   </div>
+     
+    <div class="opacity">
+        <div class="con reason">
+            <div class="con-top"></div>
+            <h2>确认删除</h2>
+            <p>是否确认删除</p>
+            <ul>
+                <li class="ccancel">取消</li>
+                <li class="ook">确认</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="opacity3">
+        <div class="con">
+             <h2>提示<span class="cancel"></span> </h2>
+                <p class="buys">购买数量已超过此商品最大购买数</p>
+        </div>
+    </div>
+		
+   <script src="./js/jquery.min.js"></script>				
+   <script src="./js/swiper.min.3.js"></script>
+   <script type="text/javascript" src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9529" charset="utf-8"></script>
+    <script type="text/javascript">
+                var vipNo=sessionStorage.getItem("vipNo");
+                var nickname=sessionStorage.getItem("nickname");
+
+                if(!parseInt(vipNo)){
+                    vipNo='';
+                }
+
+                if(!nickname){
+                    nickname='';
+                }
+
+                NTKF_PARAM = {
+                    siteid:"kf_9529",
+                    settingid:"kf_9529_1489472556188",
+                    uid:vipNo,
+                    uname:nickname,
+                    isvip:"0",
+                    userlevel:"0",
+                    erpparam:""
+                };
+                   
+                //NTKF.im_openInPageChat('kf_9529_1489472556188');           
+    </script>
+</body>
+</html>

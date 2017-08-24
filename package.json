@@ -1,0 +1,52 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "这是一个自己项目所需，用于多页面结合webpack打包（执行js\\css分离打包）的例子。 ####国际惯例: ######下载本示例后 npm install ####本示例有两个主要文件夹: ######1.app 用于存放打包前的项目所有文件，就是说这里的文件都是写项目时的全部文件 ######2.build 用于存放打包后的项目所有文件，就是说这里的文件是可以提交给后台上项目的文件<br/>",
+  "main": "server.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "md5": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.2.2",
+    "eslint-watch": "^2.1.13",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.22.0",
+    "html-withimg-loader": "^0.1.16",
+    "image-webpack-loader": "^1.8.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "log4js": "^1.1.0",
+    "md5": "^2.2.1",
+    "n-zepto": "^1.2.0",
+    "node-sass": "^3.8.0",
+    "open-browser-webpack-plugin": "0.0.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dashboard": "^0.1.6",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=development && webpack-dashboard -- node server.js  && npm run lint:watch",
+    "start:prod": "set NODE_ENV=production && npm run build && node server.js",
+    "build": "set NODE_ENV=production && webpack -p --config webpack.config.prod.js --progress --colors",
+    "lint": "esw webpack.config.* app",
+    "lint:watch": "npm run lint -- --watch",
+    "work": "node ./main_server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
